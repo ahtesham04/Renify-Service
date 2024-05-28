@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 require("dotenv").config();
 const PORT = process.env.PORT || 5000;
-const userEvent = require("@testing-library/user-event");
+const { userEvent } = require("@testing-library/user-event");
 
 mongoose
   .connect(

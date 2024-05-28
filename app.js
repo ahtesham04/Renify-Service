@@ -6,7 +6,7 @@ const passport = require("passport");
 const app = express();
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
-const userEvent = require("@testing-library/user-event");
+const { userEvent } = require("@testing-library/user-event");
 
 app.use(cors());
 app.options("*", cors());
